@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+  <link rel="stylesheet" href="./styles/output.css" />
+  <link rel="stylesheet" href="./styles/custom.css" />
+
+  <title>libro luna - your safe corner </title>
+</head>
+<body>
+  
+  <!-- HEADER -->
+  <header class="w-full h-[420px] bg-zinc-900 bg-home bg-cover bg-center">
+    <div class="w-full h-full flex flex-col justify-center items-center">
+      <img 
+        src="img/logo.png"
+        alt="Logo luna libro"
+        class="w-32 h-32 rounded-full shadow-lg hover:scale-110 duration-200"
+      />
+      <h1 class="text-4xl mt-4 mb-2 font-bold text-white">
+        libro luna 
+      </h1>
+
+      <span class="text-white font-medium">Street 55 ,California USA </span>
+
+      <div class="bg-green-600 px-4 py-1 rounded-lg mt-5" id="date-span">
+        <span class="text-white font-medium">Monday to Sunday - 7:00 to 21:00</span>
+      </div>
+
+    </div>
+  </header>
+  <!-- FIM HEADER -->
+  
+  <h2 class="text-2xl md:text-3xl font-bold text-center mt-9 mb-6">
+    TODAY's Collection
+  </h2>
+
+  <!-- MENU -->
+  <div id="menu">
+    
+    <main class="grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-10 mx-auto max-w-7xl px-2 mb-16">
+
+      <!-- PRODUTO ITEM -->
+      <div class="flex gap-2">
+        <img 
+          src="./img/allegient.jpeg"
+          alt="allegient"
+          class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+        />
+
+        <div>
+          <p class="font-bold">Allegiant</p>
+          <p class="text-sm">Allegiant is the thrilling conclusion to the Divergent series, where Tris and her friends face shocking truths about their society and must make ultimate choices that could change the world forever.</p>
+
+          <div class="flex items-center gap-2 justify-between mt-3">
+            <p class="font-bold text-lg">$ 18.90</p>
+            <button 
+              class="bg-gray-900 px-5 rounded add-to-cart-btn"
+              data-name="allegient"
+              data-price="18.90"
+            >
+              <i class="fa fa-cart-plus text-lg text-white"></i>
+            </button>
+          </div>
+
+        </div>
+
+      </div>
+      <!-- FIM PRODUTO ITEM -->
+
+      <!-- PRODUTO ITEM -->
+      <div class="flex gap-2">
+        <img 
+          src="./img/DIVERGENTE.jpeg"
+          alt="Divergente"
+          class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+        />
+
+        <div>
+          <p class="font-bold">Divergente</p>
+          <p class="text-sm">Divergente is the first book in the Divergent series, set in a dystopian Chicago where society is divided into factions. Tris discovers she is Divergent, a rare type who doesn’t fit into any one faction, putting her life at risk.</p>
+
+          <div class="flex items-center gap-2 justify-between mt-3">
+            <p class="font-bold text-lg">$ 32.90</p>
+            <button 
+              class="bg-gray-900 px-5 rounded add-to-cart-btn"
+              data-name="Divergent"
+              data-price="32.90"
+            >
+              <i class="fa fa-cart-plus text-lg text-white"></i>
+            </button>
+          </div>
+
+        </div>
+
+      </div>
+      <!-- FIM PRODUTO ITEM -->
+
+
+      <!-- PRODUTO ITEM -->
+      <div class="flex gap-2">
+        <img 
+          src="./img/funny story.jpeg"
+          alt="funny story"
+          class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+        />
+
+        <div>
+          <p class="font-bold">Funny story</p>
+          <p class="text-sm">romance novel about Daphne, a children’s librarian who gets dumped by her fiancé. Forced to move in with Miles, her ex’s ex, their opposite personalities clash, but pretending to be a couple for a wedding leads to unexpected love and self-discovery.</p>
+
+          <div class="flex items-center gap-2 justify-between mt-3">
+            <p class="font-bold text-lg">$ 55.90</p>
+            <button 
+              class="bg-gray-900 px-5 rounded add-to-cart-btn"
+              data-name="Funny story"
+              data-price="55.90"
+            >
+              <i class="fa fa-cart-plus text-lg text-white"></i>
+            </button>
+          </div>
+
+        </div>
+
+      </div>
+      <!-- FIM PRODUTO ITEM -->      
+
+      <!-- PRODUTO ITEM -->
+      <div class="flex gap-2">
+        <img 
+          src="./img/Harry Potter and The Philosopher’s .jpeg"
+          alt="Harry Potter and The Philosopher’s"
+          class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+        />
+
+        <div>
+          <p class="font-bold">Harry Potter and The Philosopher’s</p>
+          <p class="text-sm">Harry Potter and the Philosopher’s Stone is the first book in J.K. Rowling’s magical series, where an orphaned boy, Harry, discovers he is a wizard and attends Hogwarts School of Witchcraft and Wizardry, beginning a journey filled with friendship, mystery, and adventure.</p>
+
+          <div class="flex items-center gap-2 justify-between mt-3">
+            <p class="font-bold text-lg">$ 40</p>
+            <button 
+              class="bg-gray-900 px-5 rounded add-to-cart-btn"
+              data-name="Harry Potter and The Philosopher’s"
+              data-price="40"
+            >
+              <i class="fa fa-cart-plus text-lg text-white"></i>
+            </button>
+          </div>
+
+        </div>
+
+      </div>
+      <!-- FIM PRODUTO ITEM -->  
+
+      <!-- PRODUTO ITEM -->
+      <div class="flex gap-2">
+        <img 
+          src="./img/hunger games .jpeg"
+          alt="Hunger Games"
+          class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+        />
+
+        <div>
+          <p class="font-bold">Hunger games</p>
+          <p class="text-sm">The Hunger Games by Suzanne Collins is a dystopian novel where Katniss Everdeen volunteers to take her sister’s place in a deadly televised competition, fighting for survival against other tributes while challenging the oppressive rule of the Capitol.</p>
+
+          <div class="flex items-center gap-2 justify-between mt-3">
+            <p class="font-bold text-lg">$ 23</p>
+            <button 
+              class="bg-gray-900 px-5 rounded add-to-cart-btn"
+              data-name="Hunger Games"
+              data-price="23"
+            >
+              <i class="fa fa-cart-plus text-lg text-white"></i>
+            </button>
+          </div>
+
+        </div>
+
+      </div>
+      <!-- FIM PRODUTO ITEM --> 
+
+      <!-- PRODUTO ITEM -->
+      <div class="flex gap-2">
+        <img 
+          src="./img/Sorry Not Sorry.jpeg"
+          alt="Sorry Not Sorry"
+          class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+        />
+
+        <div>
+          <p class="font-bold">Sorry Not Sorry</p>
+          <p class="text-sm">Sorry Not Sorry is a memoir by Naya Rivera that traces her journey from childhood actor to breakthrough role on Glee, sharing candid reflections on fame, identity, struggle, and self-worth.</p>
+
+          <div class="flex items-center gap-2 justify-between mt-3">
+            <p class="font-bold text-lg">$ 39.5</p>
+            <button 
+              class="bg-gray-900 px-5 rounded add-to-cart-btn"
+              data-name="Sorry Not Sorry"
+              data-price="39.5"
+            >
+              <i class="fa fa-cart-plus text-lg text-white"></i>
+            </button>
+          </div>
+
+        </div>
+
+      </div>
+      <!-- FIM PRODUTO ITEM -->
+      
+      <!-- PRODUTO ITEM -->
+      <div class="flex gap-2">
+        <img 
+          src="./img/twilight.jpeg"
+          alt="twilight"
+          class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+        />
+
+        <div>
+          <p class="font-bold">Twilight</p>
+          <p class="text-sm">Twilight is a young adult vampire romance novel by Stephenie Meyer, centered on the relationship between a human girl, Bella Swan, and a vampire, Edward Cullen, exploring themes of love, sacrifice, and the supernatural.</p>
+
+          <div class="flex items-center gap-2 justify-between mt-3">
+            <p class="font-bold text-lg">$ 70</p>
+            <button 
+              class="bg-gray-900 px-5 rounded add-to-cart-btn"
+              data-name="Twilight"
+              data-price="70"
+            >
+              <i class="fa fa-cart-plus text-lg text-white"></i>
+            </button>
+          </div>
+
+        </div>
+
+      </div>
+      <!-- FIM PRODUTO ITEM -->  
+      
+      <!-- PRODUTO ITEM -->
+      <div class="flex gap-2">
+        <img 
+          src="./img/Twisted Games.jpeg"
+          alt="Twiwsted Games"
+          class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+        />
+
+        <div>
+          <p class="font-bold">Twisted Games</p>
+          <p class="text-sm">Twisted Games is a contemporary romance novel by Ana Huang, following the story of a princess and her bodyguard as they navigate love, duty, and the challenges of royal life.</p>
+
+          <div class="flex items-center gap-2 justify-between mt-3">
+            <p class="font-bold text-lg">$ 30</p>
+            <button 
+              class="bg-gray-900 px-5 rounded add-to-cart-btn"
+              data-name="Twisted Games"
+              data-price="30"
+            >
+              <i class="fa fa-cart-plus text-lg text-white"></i>
+            </button>
+          </div>
+
+        </div>
+
+      </div>
+      <!-- FIM PRODUTO ITEM -->  
+
+
+    </main>
+
+    <div class="mx-auto max-w-7xl px-2 my-2">
+      <h2 class="font-bold text-3xl">
+        Bookmarks & Stickers
+      </h2>
+    </div>
+
+    <!-- GRID BOOKMARKS & STICKERS -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-10 mx-auto max-w-7xl px-2 mb-16" id="menu">
+
+      <!-- bookmarks and stickers ITEM -->
+      <div class="flex gap-2 w-full">
+        <img
+            src="./img/book mark1.jpeg"
+            alt="glass bookmark"
+            class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+          />
+  
+          <div class="w-full">
+            <p class="font-bold">  glass bookmark </p>
+  
+            <div class="flex items-center gap-2 justify-between mt-3">
+              <p class="font-bold text-lg">$ 6</p>
+              <button 
+                class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                data-name="glass bookmark"
+                data-price="6"
+              >
+                <i class="fa fa-cart-plus text-lg text-white"></i>
+              </button>
+            </div>
+  
+          </div>
+  
+        </div>
+        <!-- FIM bookmarks and stickers ITEM --> 
+
+      <!-- bookmarks and stickers ITEM -->
+      <div class="flex gap-2 w-full">
+        <img 
+          src="./img/book mark2.jpeg"
+          alt="Pressed flower bookmark"
+          class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+        />
+
+        <div class="w-full">
+          <p class="font-bold">Pressed flower bookmark</p>
+
+          <div class="flex items-center gap-2 justify-between mt-3">
+            <p class="font-bold text-lg">$ 7.50</p>
+            <button 
+              class="bg-gray-900 px-5 rounded add-to-cart-btn"
+              data-name="Pressed flower bookmark"
+              data-price="7.50"
+            >
+              <i class="fa fa-cart-plus text-lg text-white"></i>
+            </button>
+          </div>
+
+        </div>
+
+      </div>
+      <!-- FIM bookmarks and stickers ITEM -->  
+      
+      <!-- bookmarks and stickers ITEM -->
+      <div class="flex gap-2 w-full">
+        <img 
+          src="./img/stick 1.jpeg"
+          alt="criminal minds sticker"
+          class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+        />
+
+        <div class="w-full">
+          <p class="font-bold">criminal minds sticker</p>
+
+          <div class="flex items-center gap-2 justify-between mt-3">
+            <p class="font-bold text-lg">$ 8</p>
+            <button 
+              class="bg-gray-900 px-5 rounded add-to-cart-btn"
+              data-name="criminal minds sticker"
+              data-price="8"
+            >
+              <i class="fa fa-cart-plus text-lg text-white"></i>
+            </button>
+          </div>
+
+        </div>
+
+      </div>
+      <!-- FIM bookmarks and stickers ITEM -->
+      
+      <!-- bookmarks and stickers ITEM -->
+      <div class="flex gap-2 w-full">
+        <img 
+          src="./img/stick2.jpeg"
+          alt="automotive sticker"
+          class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+        />
+
+        <div class="w-full">
+          <p class="font-bold">automotive sticker</p>
+
+          <div class="flex items-center gap-2 justify-between mt-3">
+            <p class="font-bold text-lg">$ 8</p>
+            <button 
+              class="bg-gray-900 px-5 rounded add-to-cart-btn"
+              data-name="automotive sticker"
+              data-price="8"
+            >
+              <i class="fa fa-cart-plus text-lg text-white"></i>
+            </button>
+          </div>
+
+        </div>
+
+      </div>
+      <!-- FIM bookmarks and stickers ITEM -->
+      
+      <!-- bookmarks and stickers ITEM -->
+      <div class="flex gap-2 w-full">
+        <img 
+          src="./img/stick3.jpeg"
+          alt="Autumn sticker"
+          class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+        />
+
+        <div class="w-full">
+          <p class="font-bold">Autumn sticker</p>
+
+          <div class="flex items-center gap-2 justify-between mt-3">
+            <p class="font-bold text-lg">$ 10</p>
+            <button 
+              class="bg-gray-900 px-5 rounded add-to-cart-btn"
+              data-name="Autumn sticker"
+              data-price="10"
+            >
+              <i class="fa fa-cart-plus text-lg text-white"></i>
+            </button>
+          </div>
+
+        </div>
+
+      </div>
+      <!-- FIM bookmarks and stickers ITEM -->
+      
+      <!-- bookmarks and stickers ITEM -->
+      <div class="flex gap-2 w-full">
+        <img 
+          src="./img/stick4.jpeg"
+          alt="booklovers sticker"
+          class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+        />
+
+        <div class="w-full">
+          <p class="font-bold">booklovers sticker</p>
+
+          <div class="flex items-center gap-2 justify-between mt-3">
+            <p class="font-bold text-lg">$ 12</p>
+            <button 
+              class="bg-gray-900 px-5 rounded add-to-cart-btn"
+              data-name="booklovers sticker"
+              data-price="12"
+            >
+              <i class="fa fa-cart-plus text-lg text-white"></i>
+            </button>
+          </div>
+
+        </div>
+
+      </div>
+      <!-- FIM bookmarks and stickers ITEM -->
+
+
+
+    </div>
+    <!-- FIM GRID bookmarks and stickers -->
+
+  </div>
+  <!-- FIM MENU -->
+
+  <!-- MODAL CART -->
+  <div 
+    class="bg-black/60 w-full h-full fixed top-0 left-0 z-[99] items-center justify-center hidden"
+    id="cart-modal"
+  >
+
+    <div class="bg-white p-5 rounded-md min-w-[90%] md:min-w-[600px]">
+      <h2 class="text-center font-bold text-2xl mb-2">my cart</h2>
+
+      <div id="cart-items" class="flex justify-between mb-2 flex-col max-h-[400px] overflow-auto"></div>
+
+      <p class="font-bold">Total: <span id="cart-total">0.00</span></p>
+
+      <p class="font-bold mt-4">your address :</p>
+      <input 
+        type="text"
+        placeholder="complete address please..."
+        id="address"
+        class="w-full border-2 p-1 rounded my-1"
+      />
+      <p class="text-red-500 hidden" id="address-warn">complete address please!</p>
+
+      <div class="flex items-center justify-between mt-5 w-full">
+        <button id="close-modal-btn">Close</button>
+        <button id="checkout-btn" class="bg-green-500 text-white px-4 py-1 rounded">Checkout</button>
+      </div>
+
+    </div>
+
+  </div>
+  <!-- FIM MODAL CART -->
+
+  <!-- BUTTON CART FOOTER -->
+  <footer class="w-full bg-red-500 py-3 fixed bottom-0 z-40 flex items-center justify-center">
+    <button 
+      class="flex items-center gap-2 text-white font-bold"
+      id="cart-btn"
+    >
+      (<span id="cart-count">0</span>)
+      view my cart
+      <i class="fa fa-cart-plus text-lg text-white"></i>
+    </button>
+  </footer>
+  <!-- FIM BUTTON CART FOOTER -->
+
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

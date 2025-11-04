@@ -1,0 +1,6 @@
+.bg-home {
+  /* Override for the header background to use the lib image */
+  background-image: url('../img/lib.png') !important;
+  background-size: cover;
+  background-position: center;
+}
